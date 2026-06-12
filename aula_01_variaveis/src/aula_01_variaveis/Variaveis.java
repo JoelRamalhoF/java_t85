@@ -32,7 +32,7 @@ public class Variaveis {
 	    leia.skip("\\R?");
 	    nome = leia.nextLine();
 	    
-	    System.out.println("Olá " + nome +", bem vindo!");
+	    System.out.println("Olá " + nome +", bem vindo(a)!");
 	}
 
 }
