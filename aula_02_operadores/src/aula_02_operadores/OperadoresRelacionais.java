@@ -12,6 +12,7 @@ public class OperadoresRelacionais {
 		System.out.printf("\n %.2f != %.2f = %b", numero1, numero2, numero1 != numero2);
 		System.out.printf("\n %.2f > %.2f = %b", numero1, numero3, numero1 > numero2);
 		System.out.printf("\n %.2f >= %.2f = %b", numero1, numero2, numero1 >= numero2);
+		
 	}
 
 }
