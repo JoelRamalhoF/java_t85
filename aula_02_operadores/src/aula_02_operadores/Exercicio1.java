@@ -7,17 +7,17 @@ public class Exercicio1 {
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
-		double salario;
-		double abono;
-		double novoSalario;
+		float salario;
+		float abono;
+		float novoSalario;
 		
 		System.out.print("\nDigite o salário R$: ");
 		
-		salario = leia.nextDouble();
+		salario = leia.nextFloat();
 		
         System.out.print("\nDigite o abono R$: ");
 		
-		abono = leia.nextDouble();
+		abono = leia.nextFloat();
 		
 		novoSalario = salario +abono;
 		
