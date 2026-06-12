@@ -12,7 +12,7 @@ public class Exercicio02 {
 		float nota2;
 		float nota3;
 		float nota4;
-		float media;
+		float mediaFinal;
 		
 		
         System.out.print("\nDigite a Primeira Nota: ");
@@ -31,9 +31,9 @@ public class Exercicio02 {
 				
 				nota4 = leia.nextFloat();
 				
-		media = ((nota1 + nota2 + nota3 + nota4) / 4);
+		mediaFinal = ((nota1 + nota2 + nota3 + nota4) / 4);
 		
-		System.out.printf("A Média das notas é: %.2f", media);
+		System.out.printf("A Média Final é: %.2f", mediaFinal);
 		
 		leia.close();
 				
