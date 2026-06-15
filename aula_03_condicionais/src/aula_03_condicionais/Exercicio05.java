@@ -67,7 +67,9 @@ public class Exercicio05 {
 			break;
 			default:
 				System.out.println("Opção Inválida!");
+				
 			
+				leia.close();
 			}
 			
 			}
