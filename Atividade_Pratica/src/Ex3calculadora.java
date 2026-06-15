@@ -44,6 +44,7 @@ public class Ex3calculadora {
 		multiplicacao = n1 * n2;
 	    divisao = n1 / n2;
 		
+	    //Obs: Como é um sistema de calculadora, optei por não utilizar limite de casas decimais
 	    
 		switch(operacao)  {
 		//Caso 1 onde a operaçao é uma soma, retorna o valor de "soma"
