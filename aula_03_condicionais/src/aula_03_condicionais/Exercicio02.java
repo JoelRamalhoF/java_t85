@@ -14,16 +14,16 @@ public class Exercicio02 {
 	
 	
 	 if (numero % 2 == 0 && numero > 0 ) {
-		 System.out.println("O número é par e positivo");
+		 System.out.println("O número "+numero+" é par e positivo");
 	 } else if(numero % 2 == 0 && numero < 0 ){
-		 System.out.println("O número é par e negativo");
+		 System.out.println("O número "+numero+" é par e negativo");
 		 
 	 }else if(numero % 2 != 0 && numero < 0 ) {
-		 System.out.println("O número é ímpar e negativo");
+		 System.out.println("O número "+numero+" é ímpar e negativo");
 	 }else if(numero % 2 != 0 && numero > 0 ) {
-		 System.out.println("O número é ímpar e positivo");
+		 System.out.println("O número "+numero+" é ímpar e positivo");
 	 }else {
-		 System.out.println("O numero 0 é par e é um número inteiro");
+		 System.out.println("O numero 0 é par");
 	 }
 		 
 		 leia.close();
