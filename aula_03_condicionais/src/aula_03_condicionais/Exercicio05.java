@@ -12,7 +12,7 @@ public class Exercicio05 {
 		
 			int codigo;
 			int quantidade;
-			int valor;
+			
 			
 			
 			System.out.println("******************************************************************");
