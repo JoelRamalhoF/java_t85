@@ -19,7 +19,7 @@ public class Exercicio06 {
 		
 		
 		System.out.println("******************************************************************");
-		System.out.println("                       ESCOLHA SEU PEDIDO                         ");
+		System.out.println("                       ESCOLHA SEU CARGO                          ");
 		System.out.println("******************************************************************");
 		System.out.println("              1 - Gerente                                         ");
 		System.out.println("              2 - Vendedor                                        ");
