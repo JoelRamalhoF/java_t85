@@ -63,13 +63,13 @@ public class Ex3calculadora {
 		  //Caso 3 onde a operaçao é uma multiplicacao, retorna o valor de "multipliacacao"
 		case 3:
 			
-		    System.out.printf("Operação: Multipliacação\n Resultado: %f", multiplicacao);
+		    System.out.printf("Operação: Multiplicação\n Resultado: %f", multiplicacao);
 		    
 		    break;
 		    
 		    //Caso 4 onde a operaçao é uma divisao, retorna o valor de "divisao"
 		case 4:
-			if (n2 != 0) {
+			if (n2 != 0) { // Certificando que o numero seja diferente de 0
 		    System.out.printf("Operação: Divisão\n Resultado: %f", divisao);
 			}else {
 				System.out.println("Não existe divisão por zero!");
