@@ -69,9 +69,11 @@ public class Ex3calculadora {
 		    
 		    //Caso 4 onde a operaçao é uma divisao, retorna o valor de "divisao"
 		case 4:
-			
+			if (n2 != 0) {
 		    System.out.printf("Operação: Divisão\n Resultado: %f", divisao);
-		    
+			}else {
+				System.out.println("Não existe divisão por zero!");
+			}
 		    break;
 		    
 		    //Se nao houver nenhuma opcao digitada valia, o codigo retorna "Opção invalida!"
