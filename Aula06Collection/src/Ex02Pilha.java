@@ -8,7 +8,7 @@ public class Ex02Pilha {
 	
 	public static void main(String[] args) {
 
-        // criado uma pilha de livros, funcionando como se fosse uma fila
+        // criado uma pilha de livros na classe Stack
         Stack<String> pilha = new Stack<String>();
 
        
@@ -41,11 +41,11 @@ public class Ex02Pilha {
             switch (opcao) {
 
                 case 1:
-                    // Adiciona novo livro na pilha
+                    // Adiciona novo livro na pilha (TOPO)
                     System.out.println("Digite o nome do livro: ");
                     nome = leia.nextLine();
 
-                    pilha.push(nome);
+                    pilha.push(nome); 
 
                     System.out.println("Livro Adicionado!");
                     break;
@@ -67,7 +67,7 @@ public class Ex02Pilha {
                     if (pilha.isEmpty()) {
                         System.out.println("A Pilha de livros está vazia!");
                     } else {
-                        System.out.println("Um livro foi retirado da pilha: " + pilha.pop());
+                        System.out.println("Um livro foi retirado da pilha: " + pilha.pop()); 
                     }
                     break;
 
