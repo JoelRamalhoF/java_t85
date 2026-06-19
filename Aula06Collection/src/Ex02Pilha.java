@@ -2,12 +2,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Ex01CollectionQueue {
 
-    public static void main(String[] args) {
 
-        // criado uma fila de clientes
-        Queue<String> fila = new LinkedList<String>();
+public class Ex02Pilha {
+	
+	public static void main(String[] args) {
+
+        // criado uma pilha de livros, funcionando como se fosse uma fila
+        Queue<String> pilha = new LinkedList<String>();
 
        
         int opcao;
@@ -19,13 +21,13 @@ public class Ex01CollectionQueue {
         // Laço de repeticao para o cliente escolher e depois repetir ate que 0 seja digitado
         do {
             System.out.println("**************************************");
-            System.out.println("*** BEM VINDO(A) AO BANCO DA PRAÇA ***");
+            System.out.println("***     BEM VINDO(A) A BIBLIOTECA  ***");
             System.out.println("**************************************\n");
 
             System.out.println("**************************************");
-            System.out.println("*** 1 - ADICIONAR CLIENTE NA FILA  ***");
-            System.out.println("*** 2 - LISTAR TODOS OS CLIENTES   ***");
-            System.out.println("*** 3 - RETIRAR CLIENTE DA FILA    ***");
+            System.out.println("*** 1 - ADICIONAR LIVRO NA PILHA   ***");
+            System.out.println("*** 2 - LISTAR TODOS OS LIVROS     ***");
+            System.out.println("*** 3 - RETIRAR LIVRO DA PILHA     ***");
             System.out.println("***            0 - SAIR            ***");
             System.out.println("**************************************");
             System.out.println("ENTRE COM A OPÇÃO DESEJADA: ");
@@ -34,37 +36,38 @@ public class Ex01CollectionQueue {
             opcao = leia.nextInt();
             leia.nextLine(); // limpa a entrada
 
-            // faz a analise da opcao escolhida
+            
+			// faz a analise da opcao escolhida
             switch (opcao) {
 
                 case 1:
-                    // Adiciona novo cliente na fila
-                    System.out.println("Digite o nome do cliente: ");
+                    // Adiciona novo livro na pilha
+                    System.out.println("Digite o nome do livro: ");
                     nome = leia.nextLine();
 
-                    fila.add(nome);
+                    pilha.add(nome);
 
-                    System.out.println("Cliente Adicionado!");
+                    System.out.println("Livro Adicionado!");
                     break;
 
                 case 2:
-                    // Lista todos os clientes da fila
-                    if (fila.isEmpty()) {
-                        System.out.println("A fila está vazia!");
+                    // Lista todos os livros da pilha
+                    if (pilha.isEmpty()) {
+                        System.out.println("A Pilha de livros está vazia!");
                     } else {
-                        System.out.println("Lista de Clientes na Fila:");
-                        for (String cliente : fila) {
-                            System.out.println(cliente);
+                        System.out.println("Lista de Livros na Pilha:");
+                        for (String livro : pilha) {
+                            System.out.println(livro);
                         }
                     }
                     break;
 
                 case 3:
-                    // Retira  o primeiro cliente da fila
-                    if (fila.isEmpty()) {
-                        System.out.println("A fila está vazia!");
+                    // Retira  o primeiro livro da pilha
+                    if (pilha.isEmpty()) {
+                        System.out.println("A Pilha de livros está vazia!");
                     } else {
-                        System.out.println("Cliente chamado: " + fila.poll());
+                        System.out.println("Um livro foi retirado da pilha: " + pilha.poll());
                     }
                     break;
 
@@ -85,3 +88,5 @@ public class Ex01CollectionQueue {
         leia.close();
     }
 }
+	
+
