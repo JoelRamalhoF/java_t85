@@ -1,6 +1,6 @@
-import java.util.LinkedList;
-import java.util.Queue;
+
 import java.util.Scanner;
+import java.util.Stack;
 
 
 
@@ -9,7 +9,7 @@ public class Ex02Pilha {
 	public static void main(String[] args) {
 
         // criado uma pilha de livros, funcionando como se fosse uma fila
-        Queue<String> pilha = new LinkedList<String>();
+        Stack<String> pilha = new Stack<String>();
 
        
         int opcao;
@@ -45,7 +45,7 @@ public class Ex02Pilha {
                     System.out.println("Digite o nome do livro: ");
                     nome = leia.nextLine();
 
-                    pilha.add(nome);
+                    pilha.push(nome);
 
                     System.out.println("Livro Adicionado!");
                     break;
@@ -67,7 +67,7 @@ public class Ex02Pilha {
                     if (pilha.isEmpty()) {
                         System.out.println("A Pilha de livros está vazia!");
                     } else {
-                        System.out.println("Um livro foi retirado da pilha: " + pilha.poll());
+                        System.out.println("Um livro foi retirado da pilha: " + pilha.pop());
                     }
                     break;
 
